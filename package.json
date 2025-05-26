@@ -1,0 +1,23 @@
+{
+  "name": "stonecraft-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kanishka-shetty/kunnel-backend1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kanishka-shetty/kunnel-backend1/issues"
+  },
+  "homepage": "https://github.com/Kanishka-shetty/kunnel-backend1#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
