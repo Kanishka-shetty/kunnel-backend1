@@ -2,6 +2,16 @@ const express = require('express');
 const app = express();
 const PORT = 5000;
 
+app.use(express.json()); // to parse JSON request body
+
+const aboutRoutes = require('./routes/about-routes');
+app.use('/about', aboutRoutes);
+
+let aboutContent = {
+  title: "Welcome to Stonecraft Tiles & Marbles",
+  description: "We offer a wide range of quality tiles and marbles to transform your space."
+};
+
 let products = [
   { id: 1, name: "Marble Tile", price: 50 },
   { id: 2, name: "Granite Tile", price: 70 }
@@ -13,20 +23,13 @@ let footer = {
   email: "contact@stonecraft.com"
 };
 
-app.use(express.json()); // to parse JSON request body
 
 // Home route
 app.get('/', (req, res) => {
   res.send('Stonecraft Backend is running!');
 });
 
-// Sample route for /about
-app.get('/about', (req, res) => {
-  res.json({
-    title: "Welcome to Stonecraft Tiles & Marbles",
-    description: "We offer a wide range of quality tiles and marbles to transform your space."
-  });
-});
+
 
 // Get products list (Read operation(cRud operation - Read-GET))
 app.get('/products', (req, res) => {
