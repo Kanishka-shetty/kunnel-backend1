@@ -7,6 +7,12 @@ let products = [
   { id: 2, name: "Granite Tile", price: 70 }
 ];
 
+let footer = {
+  address: "123 Marble Street, Cityville",
+  phone: "+91-9876543210",
+  email: "contact@stonecraft.com"
+};
+
 app.use(express.json()); // to parse JSON request body
 
 // Home route
@@ -73,6 +79,25 @@ app.delete('/products/:id', (req, res) => {
 
   products.splice(productIndex, 1);
   res.json({ message: 'Product deleted successfully' });
+});
+
+// Get footer info
+app.get('/footer', (req, res) => {
+  res.json(footer);
+});
+
+// Update footer info
+app.put('/footer', (req, res) => {
+  const { address, phone, email } = req.body;
+
+  // Validate inputs
+  if (!address || !phone || !email) {
+    return res.status(400).json({ message: 'All fields (address, phone, email) are required.' });
+  }
+
+  // Update
+  footer = { address, phone, email };
+  res.json({ message: 'Footer updated successfully', footer });
 });
 
 app.listen(PORT, () => {
