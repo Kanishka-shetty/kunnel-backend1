@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aboutpages",
+  "info": {
+    "singularName": "aboutpage",
+    "pluralName": "aboutpages",
+    "displayName": "aboutpage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "headingOne": {
+      "type": "string"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "headingTwo": {
+      "type": "string"
+    },
+    "paragraphOne": {
+      "type": "text"
+    },
+    "paragraphTwo": {
+      "type": "text"
+    },
+    "valueOneTitle": {
+      "type": "string"
+    },
+    "valueOnePara": {
+      "type": "string"
+    },
+    "valueTwoTitle": {
+      "type": "string"
+    },
+    "valueTwoPara": {
+      "type": "string"
+    },
+    "valueThreeTitle": {
+      "type": "string"
+    },
+    "valueThreePara": {
+      "type": "string"
+    },
+    "valueFourTitle": {
+      "type": "string"
+    },
+    "valueFourPara": {
+      "type": "string"
+    },
+    "valueHeading": {
+      "type": "string"
+    },
+    "aboutVideo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

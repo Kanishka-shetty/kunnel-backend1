@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "heroabouts",
+  "info": {
+    "singularName": "heroabout",
+    "pluralName": "heroabouts",
+    "displayName": "heroabout"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "content": {
+      "type": "string"
+    }
+  }
+}

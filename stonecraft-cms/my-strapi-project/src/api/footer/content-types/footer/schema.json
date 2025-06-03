@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Address": {
+      "type": "text"
+    },
+    "Phone": {
+      "type": "integer"
+    },
+    "Email": {
+      "type": "email"
+    }
+  }
+}
