@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "tileheadings",
+  "info": {
+    "singularName": "tileheading",
+    "pluralName": "tileheadings",
+    "displayName": "tileheading"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "tileheading": {
+      "type": "string"
+    }
+  }
+}
