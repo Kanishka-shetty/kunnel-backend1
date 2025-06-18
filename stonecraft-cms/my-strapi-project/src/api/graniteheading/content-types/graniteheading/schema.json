@@ -1,15 +1,19 @@
 {
-  "kind": "collectionType",
-  "collectionName": "brands",
+  "kind": "singleType",
+  "collectionName": "graniteheadings",
   "info": {
-    "singularName": "brand",
-    "pluralName": "brands",
-    "displayName": "brand"
+    "singularName": "graniteheading",
+    "pluralName": "graniteheadings",
+    "displayName": "graniteheading",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
+    "heading": {
+      "type": "string"
+    },
     "images": {
       "allowedTypes": [
         "images",

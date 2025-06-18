@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "brandheadings",
+  "info": {
+    "singularName": "brandheading",
+    "pluralName": "brandheadings",
+    "displayName": "brandheading"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "string"
+    }
+  }
+}

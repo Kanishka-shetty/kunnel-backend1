@@ -1,15 +1,19 @@
 {
-  "kind": "collectionType",
-  "collectionName": "brands",
+  "kind": "singleType",
+  "collectionName": "marbleheadings",
   "info": {
-    "singularName": "brand",
-    "pluralName": "brands",
-    "displayName": "brand"
+    "singularName": "marbleheading",
+    "pluralName": "marbleheadings",
+    "displayName": "marbleheading",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
+    "heading": {
+      "type": "string"
+    },
     "images": {
       "allowedTypes": [
         "images",

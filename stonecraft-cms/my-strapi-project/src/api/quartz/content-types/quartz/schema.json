@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "tiles",
+  "collectionName": "quartzs",
   "info": {
-    "singularName": "tile",
-    "pluralName": "tiles",
-    "displayName": "tile",
+    "singularName": "quartz",
+    "pluralName": "quartzs",
+    "displayName": "quartz",
     "description": ""
   },
   "options": {

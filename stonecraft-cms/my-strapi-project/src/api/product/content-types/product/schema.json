@@ -1,21 +1,18 @@
 {
   "kind": "collectionType",
-  "collectionName": "tiles",
+  "collectionName": "products",
   "info": {
-    "singularName": "tile",
-    "pluralName": "tiles",
-    "displayName": "tile",
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
     "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
+    "productname": {
       "type": "string"
-    },
-    "price": {
-      "type": "integer"
     },
     "image": {
       "type": "media",
@@ -27,6 +24,9 @@
         "videos",
         "audios"
       ]
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }

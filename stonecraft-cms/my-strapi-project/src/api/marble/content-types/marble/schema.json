@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "tiles",
+  "collectionName": "marbles",
   "info": {
-    "singularName": "tile",
-    "pluralName": "tiles",
-    "displayName": "tile",
+    "singularName": "marble",
+    "pluralName": "marbles",
+    "displayName": "marble",
     "description": ""
   },
   "options": {
@@ -18,15 +18,14 @@
       "type": "integer"
     },
     "image": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

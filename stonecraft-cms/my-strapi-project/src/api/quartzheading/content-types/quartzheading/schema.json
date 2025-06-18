@@ -1,15 +1,18 @@
 {
-  "kind": "collectionType",
-  "collectionName": "brands",
+  "kind": "singleType",
+  "collectionName": "quartzheadings",
   "info": {
-    "singularName": "brand",
-    "pluralName": "brands",
-    "displayName": "brand"
+    "singularName": "quartzheading",
+    "pluralName": "quartzheadings",
+    "displayName": "quartzheading"
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
+    "heading": {
+      "type": "string"
+    },
     "images": {
       "allowedTypes": [
         "images",
