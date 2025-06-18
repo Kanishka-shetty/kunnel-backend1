@@ -1,0 +1,31 @@
+{
+    "kind": "collectionType",
+    "collectionName": "marbles",
+    "info": {
+        "singularName": "marble",
+        "pluralName": "marbles",
+        "displayName": "marble",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "price": {
+            "type": "integer"
+        },
+        "image": {
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ],
+            "type": "media",
+            "multiple": true
+        }
+    }
+}

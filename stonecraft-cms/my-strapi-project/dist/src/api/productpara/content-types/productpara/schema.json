@@ -1,0 +1,17 @@
+{
+    "kind": "singleType",
+    "collectionName": "productparas",
+    "info": {
+        "singularName": "productpara",
+        "pluralName": "productparas",
+        "displayName": "productpara"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "productpara": {
+            "type": "text"
+        }
+    }
+}

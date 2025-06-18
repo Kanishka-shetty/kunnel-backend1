@@ -1,0 +1,30 @@
+{
+    "kind": "collectionType",
+    "collectionName": "granites",
+    "info": {
+        "singularName": "granite",
+        "pluralName": "granites",
+        "displayName": "granite"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "price": {
+            "type": "integer"
+        },
+        "image": {
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ],
+            "type": "media",
+            "multiple": true
+        }
+    }
+}

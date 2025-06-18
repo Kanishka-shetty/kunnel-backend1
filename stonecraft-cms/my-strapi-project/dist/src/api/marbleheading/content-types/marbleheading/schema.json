@@ -1,0 +1,28 @@
+{
+    "kind": "singleType",
+    "collectionName": "marbleheadings",
+    "info": {
+        "singularName": "marbleheading",
+        "pluralName": "marbleheadings",
+        "displayName": "marbleheading",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "heading": {
+            "type": "string"
+        },
+        "images": {
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ],
+            "type": "media",
+            "multiple": true
+        }
+    }
+}

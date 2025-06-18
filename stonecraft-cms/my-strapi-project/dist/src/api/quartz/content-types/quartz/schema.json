@@ -1,0 +1,32 @@
+{
+    "kind": "collectionType",
+    "collectionName": "quartzs",
+    "info": {
+        "singularName": "quartz",
+        "pluralName": "quartzs",
+        "displayName": "quartz",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "price": {
+            "type": "integer"
+        },
+        "image": {
+            "type": "media",
+            "multiple": true,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        }
+    }
+}

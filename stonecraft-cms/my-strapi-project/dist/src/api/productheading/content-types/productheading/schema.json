@@ -1,0 +1,17 @@
+{
+    "kind": "singleType",
+    "collectionName": "productheadings",
+    "info": {
+        "singularName": "productheading",
+        "pluralName": "productheadings",
+        "displayName": "productheading"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "heading": {
+            "type": "string"
+        }
+    }
+}
