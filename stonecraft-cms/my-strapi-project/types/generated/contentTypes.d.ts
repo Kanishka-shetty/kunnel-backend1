@@ -489,9 +489,9 @@ export interface ApiFooterFooter extends Struct.CollectionTypeSchema {
   attributes: {
     AddressOne: Schema.Attribute.Text;
     Addresstwo: Schema.Attribute.Text;
-    branch1Map: Schema.Attribute.String;
+    branch1Map: Schema.Attribute.Text;
     Branch1Title: Schema.Attribute.String;
-    branch2Map: Schema.Attribute.String;
+    branch2Map: Schema.Attribute.Text;
     Branch2Title: Schema.Attribute.String;
     CompanyName: Schema.Attribute.String;
     CompanyTag: Schema.Attribute.Text;

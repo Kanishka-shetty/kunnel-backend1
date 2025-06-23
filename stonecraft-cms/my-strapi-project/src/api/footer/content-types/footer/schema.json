@@ -12,10 +12,10 @@
   },
   "attributes": {
     "branch2Map": {
-      "type": "string"
+      "type": "text"
     },
     "branch1Map": {
-      "type": "string"
+      "type": "text"
     },
     "Addresstwo": {
       "type": "text"
