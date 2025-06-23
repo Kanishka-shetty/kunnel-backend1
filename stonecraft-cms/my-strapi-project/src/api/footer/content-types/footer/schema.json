@@ -4,20 +4,60 @@
   "info": {
     "singularName": "footer",
     "pluralName": "footers",
-    "displayName": "Footer"
+    "displayName": "Footer",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "Address": {
+    "branch2Map": {
+      "type": "string"
+    },
+    "branch1Map": {
+      "type": "string"
+    },
+    "Addresstwo": {
       "type": "text"
     },
-    "Phone": {
-      "type": "integer"
+    "AddressOne": {
+      "type": "text"
     },
-    "Email": {
+    "Branch2Title": {
+      "type": "string"
+    },
+    "PhoneOne": {
+      "type": "string"
+    },
+    "PhoneTwo": {
+      "type": "string"
+    },
+    "EmailOne": {
       "type": "email"
+    },
+    "EmailTwo": {
+      "type": "email"
+    },
+    "CompanyTag": {
+      "type": "text"
+    },
+    "CompanyName": {
+      "type": "string"
+    },
+    "Branch1Title": {
+      "type": "string"
+    },
+    "FacebookLink": {
+      "type": "string"
+    },
+    "InstagramLink": {
+      "type": "string"
+    },
+    "TwitterLink": {
+      "type": "string"
+    },
+    "WhatsappLink": {
+      "type": "string"
     }
   }
 }

@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "managementheadings",
+  "info": {
+    "singularName": "managementheading",
+    "pluralName": "managementheadings",
+    "displayName": "managementheading"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "string"
+    }
+  }
+}

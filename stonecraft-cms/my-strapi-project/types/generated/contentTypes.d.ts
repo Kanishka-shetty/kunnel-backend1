@@ -478,6 +478,7 @@ export interface ApiBrandheadingBrandheading extends Struct.SingleTypeSchema {
 export interface ApiFooterFooter extends Struct.CollectionTypeSchema {
   collectionName: 'footers';
   info: {
+    description: '';
     displayName: 'Footer';
     pluralName: 'footers';
     singularName: 'footer';
@@ -486,22 +487,35 @@ export interface ApiFooterFooter extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    Address: Schema.Attribute.Text;
+    AddressOne: Schema.Attribute.Text;
+    Addresstwo: Schema.Attribute.Text;
+    branch1Map: Schema.Attribute.String;
+    Branch1Title: Schema.Attribute.String;
+    branch2Map: Schema.Attribute.String;
+    Branch2Title: Schema.Attribute.String;
+    CompanyName: Schema.Attribute.String;
+    CompanyTag: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Email: Schema.Attribute.Email;
+    EmailOne: Schema.Attribute.Email;
+    EmailTwo: Schema.Attribute.Email;
+    FacebookLink: Schema.Attribute.String;
+    InstagramLink: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::footer.footer'
     > &
       Schema.Attribute.Private;
-    Phone: Schema.Attribute.Integer;
+    PhoneOne: Schema.Attribute.String;
+    PhoneTwo: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    TwitterLink: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    WhatsappLink: Schema.Attribute.String;
   };
 }
 
@@ -591,6 +605,69 @@ export interface ApiHeroaboutHeroabout extends Struct.CollectionTypeSchema {
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::heroabout.heroabout'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiManagementManagement extends Struct.CollectionTypeSchema {
+  collectionName: 'managements';
+  info: {
+    displayName: 'management';
+    pluralName: 'managements';
+    singularName: 'management';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::management.management'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    quote: Schema.Attribute.Text;
+    role: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiManagementheadingManagementheading
+  extends Struct.SingleTypeSchema {
+  collectionName: 'managementheadings';
+  info: {
+    displayName: 'managementheading';
+    pluralName: 'managementheadings';
+    singularName: 'managementheading';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heading: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::managementheading.managementheading'
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
@@ -1437,6 +1514,8 @@ declare module '@strapi/strapi' {
       'api::granite.granite': ApiGraniteGranite;
       'api::graniteheading.graniteheading': ApiGraniteheadingGraniteheading;
       'api::heroabout.heroabout': ApiHeroaboutHeroabout;
+      'api::management.management': ApiManagementManagement;
+      'api::managementheading.managementheading': ApiManagementheadingManagementheading;
       'api::marble.marble': ApiMarbleMarble;
       'api::marbleheading.marbleheading': ApiMarbleheadingMarbleheading;
       'api::product.product': ApiProductProduct;
