@@ -11,12 +11,6 @@
         "draftAndPublish": true
     },
     "attributes": {
-        "branch2Map": {
-            "type": "text"
-        },
-        "branch1Map": {
-            "type": "text"
-        },
         "Addresstwo": {
             "type": "text"
         },
@@ -58,6 +52,12 @@
         },
         "WhatsappLink": {
             "type": "string"
+        },
+        "branch1Map": {
+            "type": "text"
+        },
+        "branch2Map": {
+            "type": "text"
         }
     }
 }
