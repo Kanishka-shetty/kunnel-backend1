@@ -4,7 +4,7 @@
     "info": {
         "singularName": "tile",
         "pluralName": "tiles",
-        "displayName": "tile",
+        "displayName": "Tile",
         "description": ""
     },
     "options": {
@@ -18,6 +18,22 @@
             "type": "integer"
         },
         "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "tilecategory": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::tilecategory.tilecategory"
+        },
+        "colors": {
             "type": "media",
             "multiple": true,
             "required": false,

@@ -986,12 +986,53 @@ export interface ApiTileTile extends Struct.CollectionTypeSchema {
   collectionName: 'tiles';
   info: {
     description: '';
-    displayName: 'tile';
+    displayName: 'Tile';
     pluralName: 'tiles';
     singularName: 'tile';
   };
   options: {
     draftAndPublish: true;
+  };
+  attributes: {
+    colors: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::tile.tile'> &
+      Schema.Attribute.Private;
+    price: Schema.Attribute.Integer;
+    publishedAt: Schema.Attribute.DateTime;
+    tilecategory: Schema.Attribute.Relation<
+      'oneToOne',
+      'api::tilecategory.tilecategory'
+    >;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTilecategoryTilecategory
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'tilecategories';
+  info: {
+    displayName: 'tilecategory';
+    pluralName: 'tilecategories';
+    singularName: 'tilecategory';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    'content-manager': {
+      visible: true;
+    };
   };
   attributes: {
     createdAt: Schema.Attribute.DateTime;
@@ -1002,11 +1043,14 @@ export interface ApiTileTile extends Struct.CollectionTypeSchema {
       true
     >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<'oneToMany', 'api::tile.tile'> &
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::tilecategory.tilecategory'
+    > &
       Schema.Attribute.Private;
-    price: Schema.Attribute.Integer;
+    name: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    title: Schema.Attribute.String;
+    slug: Schema.Attribute.UID;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1573,6 +1617,7 @@ declare module '@strapi/strapi' {
       'api::quartzheading.quartzheading': ApiQuartzheadingQuartzheading;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'api::tile.tile': ApiTileTile;
+      'api::tilecategory.tilecategory': ApiTilecategoryTilecategory;
       'api::tileheading.tileheading': ApiTileheadingTileheading;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

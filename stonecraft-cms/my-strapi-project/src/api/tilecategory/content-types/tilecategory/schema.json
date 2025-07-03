@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tilecategories",
+  "info": {
+    "singularName": "tilecategory",
+    "pluralName": "tilecategories",
+    "displayName": "tilecategory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
